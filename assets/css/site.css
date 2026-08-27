@@ -576,17 +576,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-400);outline-o
 .stack__card{
   position:sticky;
   top:calc(var(--stack-top) + var(--i) * var(--stack-step));
-  background:var(--white);
+  background:var(--navy-800);
   border-radius:20px;
   padding:10px;
-  box-shadow:0 48px 96px -46px rgba(10,22,40,.5),0 0 0 1px rgba(15,33,64,.10);
+  box-shadow:0 48px 96px -46px rgba(10,22,40,.55),0 0 0 1px rgba(10,22,40,.35);
   transform-origin:center top;
 }
 /* Covered cards are veiled rather than made transparent, so the card below
    never ghosts through the one on top. */
 .stack__card::after{
   content:'';position:absolute;inset:0;border-radius:inherit;
-  background:var(--white);opacity:var(--dim,0);pointer-events:none;
+  background:var(--navy-900);opacity:var(--dim,0);pointer-events:none;
 }
 .stack__head{
   display:flex;align-items:baseline;gap:.9rem;
@@ -594,15 +594,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-400);outline-o
 }
 .stack__num{
   font-family:var(--pjs);font-weight:700;font-size:.75rem;letter-spacing:.14em;
-  color:var(--blue-500);
+  color:var(--blue-300);
 }
 .stack__title{
   font-family:var(--pjs);font-weight:700;font-size:1.0625rem;letter-spacing:-.01em;
-  color:var(--navy-800);margin:0;
-}
-.stack__desc{
-  margin:0 0 0 auto;text-align:right;
-  font-family:var(--dm);font-size:.875rem;color:var(--slate-400);
+  color:var(--white);margin:0;
 }
 /* Square corners on the screenshot, sitting inside the rounded frame. */
 .stack__shot{
@@ -616,7 +612,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-400);outline-o
   .stack__card{border-radius:14px;padding:6px}
   .stack__head{padding:.55rem .5rem .7rem;gap:.6rem;flex-wrap:wrap}
   .stack__title{font-size:.9375rem}
-  .stack__desc{display:none}
   .stack__shot{aspect-ratio:4 / 3}
   .stack__shot img{object-position:top left}
 }

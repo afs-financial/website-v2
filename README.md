@@ -55,15 +55,15 @@ screen slides up over the one before it.
 Every button on the page is a `mailto:` link by default, so the site works before
 anything is set up.
 
-To switch the whole site over to Andrew's calendar, open `assets/js/site.js` and
-paste the link into the single line near the top:
+The live link is set in `assets/js/site.js`, one line near the top:
 
 ```js
-var BOOKING_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ...';
+var BOOKING_URL = 'https://calendar.app.google/mWvefSubw2LFCc177';
 ```
 
-That one edit repoints every Book a Demo button and opens the booking page in a
-new tab. Leave the line empty to go back to `mailto:`.
+That one line repoints all seven Book a Demo buttons and opens the booking page
+in a new tab. Empty the string to fall back to the `mailto:` link that is still
+written into the HTML.
 
 To create the link, in Google Calendar: Create, then Appointment schedule. Set the
 duration, set the available days and hours, and check that it is writing to and
@@ -99,7 +99,6 @@ Website hosting and email are independent of each other.
 
 ## Open items
 
-- Andrew's Google Calendar appointment schedule link, to replace the `mailto:`.
 - A Reporting or dashboard screen, once that part of the product is finished.
 - The Aggregated cashflow section still uses three copies of the older
   organisation cashflow capture, and its cascade is still numbered organisation,

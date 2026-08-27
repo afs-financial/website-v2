@@ -19,7 +19,7 @@
      Example:
      var BOOKING_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ...';
      ========================================================================== */
-  var BOOKING_URL = '';
+  var BOOKING_URL = 'https://calendar.app.google/mWvefSubw2LFCc177';
 
   /* ---------------------------------------------------------------- Navigation */
   var nav = document.querySelector('.nav');
