@@ -83,6 +83,7 @@ body{
   line-height:1.05;letter-spacing:-.03em;color:var(--white);
 }
 .h-display strong{font-weight:800;letter-spacing:-.035em}
+.h-display .h-accent{color:var(--blue-300)}
 
 .h-section{
   font-family:var(--pjs);font-weight:700;
